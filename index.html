@@ -10,6 +10,45 @@
 </head>
 <body>
     <div class="container">
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const div = document.querySelector(".text");
+                const text = "Shubh Desai"
+                const typingSpeed = 90;
+                const deletingSpeed = 50;
+                const pause = 1200;
+
+                let i = 0;
+                let checkDelete = false;
+
+                function nameTypingEffect(){
+                    //Typing Effect
+                    if (!checkDelete) {
+                        div.textContent = text.slice(0, i++);
+                        if (i > text.length) {
+                            setTimeout(() => (checkDelete = true), pause);
+                        }
+                    }
+                    //Deleting Effect
+                    else{
+                        div.textContent = text.slice(0, i--);
+                        if (i < 0) {
+                            checkDelete = false;
+                            i = 0;
+                        }
+                    }
+                    
+                    if (checkDelete) {
+                        setTimeout(nameTypingEffect, deletingSpeed);
+                    }
+                    else {
+                        setTimeout(nameTypingEffect, typingSpeed);
+                    }
+                }
+                nameTypingEffect()
+            });
+        </script>
+
         <header>
             <a href="/" class="logo"> Shubh's Portfolio</a>
 
@@ -24,9 +63,11 @@
         <!--Home Tab-->
         <section class="home" id="home">
             <div class="home-detail">
-                <h1>Shubh Desai</h1>
+                <h1>
+                    <span class="text"></span>
+                </h1>
                 <h2>Software Engineer</h2>
-                <p>Hello, my name is Shubh Desai, I am an undergraduate student at the University of Michigan majoring in Computer Science. 
+                <p>Hello, my name is Shubh Desai, I am an undergraduate student at the <span class="umich">University of Michigan</span> majoring in Computer Science. 
                     I have a passion for web development and enjoy building user-friendly applications that enchance user experience.
                     I am particularly interested in full-stack development and like to explore new technologies and frameworks.
                 </p>                
@@ -125,7 +166,6 @@
                 </div>
 
                 <!-- Project 4 -->
-                
                 <div class="projects-container">
                     <div class="projects">
                         Static Instagram Clone
@@ -141,20 +181,6 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!---- Project 5
-                <div class="projects-container">
-                    <div class="projects">
-                        Project 5
-                    </div>
-                </div>
-                
-                Project 6
-                <div class="projects-container">
-                    <div class="projects">
-                        Project 6
-                    </div>
-                </div> -->
             </div>
         </section>
     </div>
