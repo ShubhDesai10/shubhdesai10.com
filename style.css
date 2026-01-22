@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url("images/baseImage/background.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 5%;
+}
+.container{
+    margin-bottom: 55px;
+    height: 90vh;
+    background-color: rgba(120, 204, 243, 0.4);
+    border: 5px solid rgba(255, 255, 255, .1);
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 30px;
+    color: rgb(20, 141, 210);
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .5s;
+
+}
+.navbar a:hover{
+    border-color: rgb(255, 255, 255);
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 90%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: rgb(0, 0, 0);
+}
+.home-detail h1{
+    font-size: 55px;
+    line-height: 1.5;
+}
+.home-detail h2{
+    font-size: 30px;
+}
+.home-detail p{
+    margin: 10px 0 20px;
+    line-height: 130%;
+}
+.home-detail .download-social{
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    display:inline-block;
+    padding: 10px 20px;
+    background: azure;
+    border: 2px solid azure;
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    font-weight: 700;
+    box-shadow: 0 0 7px rgb(62, 65, 65);
+    text-decoration: none;
+}
+.buttons:hover{
+    background: transparent;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px azure;
+}
+.home-detail .social-media{
+    margin-left: 20px;
+}
+.home-detail .social-media a{
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid azure;
+    box-shadow: 0 0 7px rgb(62, 65, 65);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    margin: 0 8px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 25px;
+}
+.home-detail .social-media a:hover{
+    background: azure;
+    color: black;
+    box-shadow: 0 0 7px azure;
+}
+.home-img .img-box img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.home-img .img-box{
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid azure;
+    border-radius: 70%;
+    box-shadow: 0 0 30px azure;
+}
+.experience{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: rgb(0, 0, 0);
+}
+.experience-detail h1{
+    text-align: center;
+    font-size: 55px;
+    line-height: 1.5;
+}
+.experience-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(120, 204, 243, 0.4);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px 0;
+    box-shadow: 0 0 10px azure;
+}
+.logo-wrapper img {
+    object-fit: contain;
+    height: 110px;
+    width: 110px;
+    margin: 5px 5px 5px;
+    border-radius: 10px;
+    background-color: azure;
+    box-shadow: 0 0 10px azure;
+}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-info .company-name{
+    text-align: center;
+    font-size: 30px;
+}
+.experience-info .job-title{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.experience-info .dates-worked {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.job-description{
+    font-size: 11px;
+}
+.personal-projects{
+    flex-wrap: wrap;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+    padding: 50px 5% 0;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+.projects-container{
+    display: inline-block;
+    width: 30%;
+    height: 240px;
+    background-color: rgba(120, 204, 243, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+.projects-detail h1{
+    text-align: center;
+    font-size: 55px;
+    line-height: 1.5;
+}
+.projects{
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 12px;
+}
+.language-images{
+    line-height: 1.5;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.language-images i{
+    filter: drop-shadow(0 0 5px #128ce9);
+}
+.project-display img{
+    width: 140px;
+    height: 90px;
+    margin: 5px 5px 5px;
+    background-color: azure;
+    box-shadow: 0 0 10px azure;
+    border-radius: 10%;
+}
+.contact {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    color: black;
+    text-align: center;
+}
+.contact-detail h1{
+    text-align: center;
+    font-size: 55px;
+    line-height: 1.5;
+}
+.contact-detail p{
+    font-size: 15px;
+    line-height: 130%;
+}
+.email-box, .name-box {
+    height: 50px;
+    width: 48%;
+    min-width: 200px;
+    background-color: rgba(120, 204, 243);
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.subject-box, .message-box{
+    display: block;
+    height: 50px;
+    width: 100%; 
+    background-color: rgba(120, 204, 243);
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+textarea{
+    max-height: 250px;
+    resize: vertical;
+    padding: 5px;
+}
+.submit-button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(290deg, rgba(10,73,220,255), #128ce9, azure);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+.email-box:focus, .name-box:focus, .subject-box:focus, .message-box:focus{
+    border: 2px solid azure;
+}
+.email-box:hover, .name-box:hover, .subject-box:hover, .message-box:hover{
+    border: 2px solid azure;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+::placeholder{
+
+    color:azure;
+    
+}
+.submit-button:hover{
+    border: 2px solid azure;
+}
+.contact-container{
+    margin-bottom: 55px;
+    background-color: rgba(120, 204, 243, 0.4);
+    border: 5px solid rgba(255, 255, 255, .1);
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.projects ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+    text-align: left; 
+    margin-top: 10px;
+}
+.projects li {
+    margin-bottom: 5px;
+}
