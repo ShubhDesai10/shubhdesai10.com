@@ -20,3 +20,4 @@ A personal portfolio website showcasing my experience, projects, and skills as a
 - **Remix Icons** – UI icons
 - **Devicon** – Technology icons
 - **Web3Forms** – Contact form backend service
+- **JavaScript** – Typing animation, DOM manipulation, UI behavior
